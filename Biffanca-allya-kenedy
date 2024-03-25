@@ -1,0 +1,44 @@
+import requests
+from bs4 import BeautifulSoup
+
+def scrape_carsome():
+    url = "https://www.carsome.my"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+        # Lakukan parsing halaman web dan ambil data kendaraan yang diinginkan
+        # Contoh: nama kendaraan, harga, tahun pembuatan, dll.
+        # Selanjutnya, Anda dapat menyimpan data ini ke dalam struktur data seperti daftar atau DataFrame.
+
+def scrape_oto():
+    url = "https://www.oto.com"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+        # Lakukan parsing halaman web dan ambil data kendaraan yang diinginkan
+        # Contoh: nama kendaraan, harga, tahun pembuatan, dll.
+        # Selanjutnya, Anda dapat menyimpan data ini ke dalam struktur data seperti daftar atau DataFrame.
+
+def scrape_olx():
+    url = "https://www.olx.co.id"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+        # Lakukan parsing halaman web dan ambil data kendaraan yang diinginkan
+        # Contoh: nama kendaraan, harga, tahun pembuatan, dll.
+        # Selanjutnya, Anda dapat menyimpan data ini ke dalam struktur data seperti daftar atau DataFrame.
+
+def scrape_mobil123():
+    url = "https://www.mobil123.com"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+        # Lakukan parsing halaman web dan ambil data kendaraan yang diinginkan
+        # Contoh: nama kendaraan, harga, tahun pembuatan, dll.
+        # Selanjutnya, Anda dapat menyimpan data ini ke dalam struktur data seperti daftar atau DataFrame.
+
+if __name__ == "__main__":
+    scrape_carsome()
+    scrape_oto()
+    scrape_olx()
+    scrape_mobil123()
